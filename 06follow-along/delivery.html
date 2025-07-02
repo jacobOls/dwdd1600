@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Get your next meal delivered by drone." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="delivery.css" />
+
+    <meta charset="UTF-8" />
+    <title>Drone Delivery Services LLC.</title>
+  </head>
+  <body>
+    <!-- start the page header -->
+    <header>
+      <span>Drone Delivery </span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html">About Us</a></li>
+        <li class="active"><a href="delivery.html">Request a Delivery</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- start the page main -->
+    <main>
+      <h1>Request A Delivery</h1>
+
+      <form method="get" class="myForm" action="thanks.html">
+        <fieldset>
+          <legend>Customer Information</legend>
+          <label>First Name* <input type="text" name="fname" required /></label>
+          <label>Last Name* <input type="text" name="lname" required /></label>
+          <label
+            >Cell Number*
+            <input type="tel" name="phone" required placeholder="123-456-7890"
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment Method</legend>
+          <label
+            ><input type="radio" name="method" value="credit" /> Credit
+            Card</label
+          >
+          <label
+            ><input type="radio" name="method" value="paypal" /> Paypal</label
+          >
+          <label
+            ><input type="radio" name="method" value="bank" /> Bank
+            Transfer</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Add on Services</legend>
+          <label
+            ><input type="checkbox" name="insurance" value="chosen" /> Shipping
+            Insurance</label
+          >
+          <label
+            ><input type="checkbox" name="tracking" value="chosen" /> Package
+            Tracking</label
+          >
+          <label
+            ><input type="checkbox" name="gift" value="chosen" /> Gift Wrap
+          </label>
+          <label
+            ><input type="checkbox" name="party" value="chosen" /> Party Box
+          </label>
+
+          <label>
+            Delivery Drone Size
+            <select name="Delivery Drone Size">
+              <option vallue="none">Please Select</option>
+              <option vallue="small">Small Drone (20 mph)</option>
+              <option vallue="medium">Medium Drone (40 mph)</option>
+              <option vallue="large">Large Drone (60 mph)</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <label
+          >Comments
+          <textarea name="comments"></textarea>
+        </label>
+
+        <input type="submit" value="Send Delivery Request" />
+      </form>
+    </main>
+
+    <!-- start the page footer -->
+    <footer>
+      <p>
+        &copy;202X &bull; Drone Delivery Services &bull;
+        <a href="mailto:zen@gmail.com">Email Us</a>
+      </p>
+    </footer>
+  </body>
+</html>
